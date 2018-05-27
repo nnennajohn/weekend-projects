@@ -1,9 +1,9 @@
 import React from 'react';
+import GatsbyLink from 'gatsby-link';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import { darken } from 'polished';
 import { color } from './shared/styles';
-import GatsbyLink from 'gatsby-link';
 
 // prettier-ignore
 const LinkWrapper = styled.a`

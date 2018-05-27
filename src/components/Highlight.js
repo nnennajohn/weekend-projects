@@ -18,7 +18,7 @@ class Highlight extends React.Component {
   }
 
   highlightCode() {
-    const domNode = ReactDOM.findDOMNode(this) // eslint-disable-line
+    const domNode = ReactDOM.findDOMNode(this); // eslint-disable-line
     Prism.highlightAllUnder(domNode);
   }
 

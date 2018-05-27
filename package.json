@@ -30,10 +30,7 @@
     "styled-components": "^3.3.0",
     "uuid": "^3.2.1"
   },
-  "keywords": [
-    "Weekend Projects",
-    "Gatsby Starter"
-  ],
+  "keywords": ["Weekend Projects", "Gatsby Starter"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -88,6 +85,7 @@
       "eslint-config-airbnb",
       "eslint-config-prettier",
       "eslint-plugin-import",
+      "eslint-plugin-jsx-a11y",
       "eslint-plugin-prettier",
       "eslint-plugin-react",
       "prettier",

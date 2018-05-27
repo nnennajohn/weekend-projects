@@ -44,9 +44,9 @@ const IndexPage = ({ data }) => {
       </div>
     </section>
   );
-}
+};
 
-export default IndexPage
+export default IndexPage;
 
 IndexPage.propTypes = {
   data: PropTypes.shape({

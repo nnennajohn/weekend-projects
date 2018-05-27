@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 // import Navbar from '../components/Navbar';
 import styled, { css } from 'styled-components';
 // import './index.css'
@@ -51,15 +51,15 @@ const Layout = ({ children, data, location }) => (
     </div>
     <Footer />
   </div>
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
   data: PropTypes.any,
-  location: PropTypes.any
-}
+  location: PropTypes.any,
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -72,4 +72,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

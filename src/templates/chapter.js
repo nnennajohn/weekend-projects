@@ -206,7 +206,7 @@ const Pagination = styled(CTA)`
   margin-top: 3rem;
 `;
 
-export default ({ data, location }) => {
+const ChapterPage = ({ data, location }) => {
   const post = data.markdownRemark;
   const { commit, title, description } = post.frontmatter;
 
@@ -275,7 +275,7 @@ export default ({ data, location }) => {
         >
           <LogoTwitter />
           <CTAMessage>
-            Tweet "I&rsquo;m learning Storybook! It’s a great dev tool for UI components."
+            Tweet &quot;I&apos;m learning Storybook! It’s a great dev tool for UI components.&quot;
           </CTAMessage>
         </CTAWrapper>
 
@@ -309,6 +309,9 @@ export default ({ data, location }) => {
   );
 };
 
+export default ChapterPage;
+
+// $FlowFixMe
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {

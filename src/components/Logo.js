@@ -27,10 +27,7 @@ const LogoImgWrapper = styled.span`
 function Logo({ src, alt, lgWidth, ...props }) {
   return (
     <LogoImgWrapper lgWidth={lgWidth}>
-      <img
-        src={src}
-        alt={alt}
-      />
+      <img src={src} alt={alt} />
     </LogoImgWrapper>
   );
 }
@@ -38,7 +35,7 @@ function Logo({ src, alt, lgWidth, ...props }) {
 Logo.propTypes = {
   src: PropTypes.string,
   alt: PropTypes.string,
-  lgWidth: PropTypes.string
+  lgWidth: PropTypes.string,
 };
 
 Logo.defaultProps = {

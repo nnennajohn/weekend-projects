@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Link from './Link';
-import LogoChroma from './LogoChroma';
+import Logo from './Logo';
 import { color, typography, pageMargins } from './shared/styles';
 
 const FooterWrapper = styled.footer`
@@ -17,7 +17,7 @@ const FooterLink = styled(Link)`
   font-weight: ${typography.weight.bold};
 `;
 
-const Logo = styled(LogoChroma)`
+const FooterLogo = styled(Logo)`
   height: 26px;
   width: auto;
   margin-bottom: 1rem;
@@ -26,7 +26,7 @@ const Logo = styled(LogoChroma)`
 const Footer = ({ ...props }) => (
   <FooterWrapper {...props}>
     <a href="https://blog.hichroma.com" target="_blank" rel="noopener noreferrer">
-      <Logo />
+      <FooterLogo />
     </a>
     <br />
     Made by{' '}
